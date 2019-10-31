@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link data-require="bootstrap@4.1.1" data-semver="4.1.1" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="style.css" />
+<style>
+
+table {
+  margin-left:760px;
+  width:350px;
+  border:collapse;
+}
+  .form1 {
+    margin-top:50px;
+    border:1px solid lightgrey;
+    width:600px;
+    height:350px;
+    text-align: center;
+    margin-left:500px;
+      box-shadow: 2px 2px 4px 4px lightgrey;
+  }
+
+  #head {
+    text-shadow: 2px 4px 8px blue;
+    color:white;
+    margin-top:14px;
+  }
+
+  input[type="text"] {
+    border-radius: 20px;
+    width:35%;
+    border-color:1px solid lightgrey;
+  }
+  button[type="button"] {
+    border-radius: 20px;
+    width:15%;
+    background-color: blue;
+    color:white;
+    margin-top:40px;
+     box-shadow: 1px 1px 2px 2px lightgrey;
+  }
+
+</style>
+
+  </head>
+
+  <body style="background-color:white;">
+    <div class="form1">
+    <h1 id="head">Crud in Javascript</h1><br><br>
+    <div id="container">
+      <form>
+        <div>
+          <label for="task_des"><span style="color:white; font-size:26px;text-shadow: 2px 2px 4px blue;">Name:</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input id="task_des" type="text" required />
+        </div>
+        <div>
+          <label for="task_state"><span style="color:white; font-size:26px;text-shadow: 2px 2px 4px blue;">Country:</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input id="task_state" type="text" required />
+        </div>
+        <div>
+          <button id="save_task" type="button"> Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+    <hr />
+    <div id="container" style="text-align: center;">
+      <h2>Action</h2>
+<table>
+  <th>Action</th>
+<th>Name</th>
+<th>Country</th>
+
+</table>
+      <ul id="task_wrapper"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>
